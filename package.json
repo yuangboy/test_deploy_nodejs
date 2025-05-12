@@ -20,6 +20,7 @@
   "homepage": "https://github.com/yuangboy/test_deploy_nodejs#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
 }
