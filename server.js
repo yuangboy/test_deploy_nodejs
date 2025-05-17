@@ -54,8 +54,9 @@ app.post('/webhooks/whatsapp/:security_token', async (req, res) => {
   res.sendStatus(404);
 });
 
-app;get("/instance/67322/webhook", (req, res) => {
-  res.sendStatus(200);
+app.post('/instance/67322/webhook', (req, res) => {
+    console.log('Webhook reçu :', req.body); // données envoyées par WaAPI
+    res.status(200).send('OK'); // répondre à WaAPI
 });
 
 
